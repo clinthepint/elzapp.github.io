@@ -27,7 +27,9 @@ jobs:
            git config --global user.name "Bård Aase"
            git remote -v
     - name: Build site
-      run: bash build.sh
+      run: |
+              git fetch origin/gh-pages
+              bash build.sh
       
     - name: Publish site
       run: bash publish.sh
