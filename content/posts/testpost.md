@@ -5,3 +5,17 @@ draft: false
 ---
 
 Every blog needs a testpost
+
+
+even with some embedded go-code:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello world!")
+}
+
+```
