@@ -23,14 +23,8 @@ jobs:
         fetch-depth: 0
 
     # Runs a single command using the runners shell
-    - name: Setup git
-      run: |
-           git config --global user.email "elzapp@gmail.com"
-           git config --global user.name "Bård Aase"
-           git remote -v
     - name: Build site
       run: |
-              git fetch origin/gh-pages
               bash build.sh
       
               #    - name: Publish site
