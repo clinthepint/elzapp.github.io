@@ -17,7 +17,7 @@
       <pubDate>Thu, 06 Aug 2020 21:18:37 +0200</pubDate>
       
       <guid>https://elzapp.github.io/posts/testpost/</guid>
-      <description>Every blog needs a testpost
+      <description>Every codeblog needs a testpost
 even with some embedded go-code:
 package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello world!&amp;#34;) } </description>
     </item>
