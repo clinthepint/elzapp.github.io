@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir -p themes
 test -f hugo || curl -L https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.tar.gz|tar -xzv hugo
 #rm -rf web/public
 #git worktree add -B gh-pages web/public origin/gh-pages
