@@ -3,34 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://elzapp.github.io/</loc>
+    <loc>https://blog.elzapp.com/</loc>
     <lastmod>2020-08-06T21:18:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://elzapp.github.io/posts/</loc>
+    <loc>https://blog.elzapp.com/posts/</loc>
     <lastmod>2020-08-06T21:18:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://elzapp.github.io/posts/testpost/</loc>
+    <loc>https://blog.elzapp.com/posts/testpost/</loc>
     <lastmod>2020-08-06T21:18:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://elzapp.github.io/categories/</loc>
+    <loc>https://blog.elzapp.com/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://elzapp.github.io/tags/</loc>
+    <loc>https://blog.elzapp.com/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
