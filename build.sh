@@ -1,6 +1,6 @@
 #!/bin/bash
 mkdir -p themes
-test -f hugo || curl -L https://github.com/gohugoio/hugo/releases/download/v0.118.2/hugo_0.118.2_Linux-64bit.tar.gz|tar -xzv hugo
+test -f hugo || curl -L https://github.com/gohugoio/hugo/releases/download/v0.140.0/hugo_extended_0.140.0_Linux-64bit.tar.gz|tar -xzv hugo
 (git worktree list --porcelain|grep public) ||(
 rm -rf public
 git worktree add -B gh-pages public origin/gh-pages
