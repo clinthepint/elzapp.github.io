@@ -1,3 +1,42 @@
-<iframe width="100%" style="aspect-ratio: 1;"
+<style>
+.ytMusic {
+    aspect-ratio: 1;border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.5);
+}
+.ytMusic.spin {
+
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+.ytMusic:hover {
+    border-radius: 0.5em;
+    animation: none;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+</style>
+
+<iframe width="100%" class="ytMusic"
 src="https://www.youtube.com/embed/playlist?list={{ .Get 0}}" frameborder="0"
 allowfullscreen></iframe>
+
+<script>
+    document.addEventListener("DOMContentLoaded",function(){
+    document.querySelectorAll(".ytMusic").forEach(function(value,key,parent){
+        value.addEventListener("mouseout",function(e){
+            this.classList.add("spin")
+        })
+    })
+})
+</script>
