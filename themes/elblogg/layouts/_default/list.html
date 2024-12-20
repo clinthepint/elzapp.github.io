@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }} {{ range .Pages }}
+<article data-permalink="{{.Permalink}}" class="summary">
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{
+    $year := .Date | time.Format "2006" }} {{ $mon := .Date | time.Format "Jan"
+    }} {{ $day := .Date | time.Format "02" }}
+    <time class="datebadge" datetime="{{ $dateMachine }}"
+        ><span class="y">{{ $year }}</span><span class="m">{{ $mon }}</span
+        ><span class="d">{{ $day }}</span></time
+    >
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <main>{{ .Summary }}</main>
+    <aside class="meta">Tags and taxonomies</aside>
+</article>
+{{ end }} {{ end }}

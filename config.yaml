@@ -1,0 +1,32 @@
+baseURL: https://blog.elzapp.com/
+languageCode: en-us
+title: blog.elzapp.com
+theme: elblogg
+MetaDataFormat: yaml
+DefaultContentLanguage: en
+SectionPagesMenu: main
+Paginate: 10
+googleAnalytics: ""
+enableRobotsTXT: true
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
+params:
+  favicon: ""
+  site_logo: ""
+  description: the tech side
+  facebook: ""
+  twitter: ""
+  instagram: ""
+  youtube: ""
+  github: ""
+  gitlab: ""
+  linkedin: ""
+  mastodon: https://mastodon.cloud/@elzapp
+  slack: ""
+  stackoverflow: ""
+  rss: ""
+  background_color_class: bg-black
+  featured_image: /header.webp
+  recent_posts_number: 2

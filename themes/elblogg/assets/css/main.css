@@ -1,0 +1,180 @@
+:root {
+--blue: hsla(235, 58%, 38%, 1);
+--blue-tinted: hsla(235, 58%, 60%, 1);
+--blue-gloss: hsla(235, 58%, 80%, 1);
+--orange: hsla(33, 96%, 48%, 1);
+--orange-tinted: hsla(33, 96%, 68%, 1);
+--orange-gloss: hsla(33, 96%, 88%, 1);
+--light-blue: hsla(192, 59%, 43%, 1);
+--green: hsla(78, 33%, 27%, 1);
+--cream: hsla(138, 33%, 94%, 1);
+}
+a,a:visited {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+body {
+    color: #222;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 1rem;
+    background: var(--cream);
+}
+
+header {
+    border-bottom: 1px solid #222;
+    margin-bottom: 1rem;
+}
+
+footer {
+    border-top: 1px solid #222;
+    margin-top: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-areas: "title navbar";
+    background: var(--cream);
+}
+
+header nav {
+    margin: auto;
+    grid-area: navbar;
+    margin-bottom: 0;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0;
+    float: left;
+    background: linear-gradient(0deg, var(--blue) 0%,var(--blue-tinted) 70%, var(--blue-gloss) 80%, var(--blue-tinted) 100%);
+    padding: 0.5em 0.5em 0 0.5em;
+    border-radius: .6em 0.2em 0 0;
+}
+header nav ul li a,
+header nav ul li a:visited
+{
+    color: var(--orange);
+}
+
+header nav ul li:hover {
+    background: linear-gradient(180deg, var(--orange) 0%,var(--orange-tinted) 70%, var(--orange-gloss) 80%, var(--orange-tinted) 100%);
+    color: var(--blue)
+}
+header nav ul li:hover a {
+    color: var(--blue)
+
+}
+
+header nav ul li + li {
+    margin-left:1px;
+    border-radius: 0.2em 0.2em 0 0;
+}
+header nav ul li + li:last-child {
+    border-radius: 0.2em 0.6em 0 0;
+}
+
+ time.datebadge:before {
+    background: var(--green);
+    content:'';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
+}
+
+ time.datebadge {
+    display: grid;
+    width: 4em;
+    color: #fff;
+    grid-template-areas: "day" "mon" "year";
+    grid-template-rows: 2.5em 1em 1em;
+    grid-template-columns: auto;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, .5));
+}
+ time.datebadge * {
+    justify-self: center;
+    align-self: center;
+}
+ time.datebadge .d {
+    padding-top: 10px;
+    grid-area: day;
+    font-size: 250%;
+    font-weight: bold;
+}
+ time.datebadge .m {
+    grid-area: mon;
+}
+ time.datebadge .y {
+    grid-area: year;
+    color: #bbb;
+}
+
+article {
+    max-width: 790px;
+    margin:auto;
+    display: grid;
+    grid-template-areas: "title title date" "content content date" "meta meta date";
+    grid-template-columns: 5em auto 4em;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    padding: 1em;
+    background:#FFF;
+}
+article.full {
+    grid-template-areas: "title title date" "content content content" "meta meta meta";
+}
+article h2, article h1 {
+    align-self: center;
+    grid-area: title;
+    margin: 0;
+    padding: 0;
+}
+article time {
+    grid-area: date;
+}
+article main {
+    grid-area: content;
+}
+article aside.meta {
+    grid-area: meta;
+    border-top: 1px dashed var(--blue);
+}
+
+ul.tags li a:before {
+    position:absolute;
+    content: '';
+    clip-path: polygon(0 50%, 0.6em 0, 100% 0, 100% 100%, 0.6em 100%);
+    background:var(--orange);    
+    z-index: -1;
+    inset: 0;
+}
+
+ul.tags li a {
+    padding: 0.2em;
+    padding-left:0.6em;
+    padding-top:0.3em;
+    text-decoration: none;
+    color: #000;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, .5));
+}
+ul.tags {
+    margin:0;padding:0;
+}
+ul.tags li {
+    margin:0;padding:0;
+    list-style-type: none;
+    float:left;
+    
+
+}
+ul.tags li + li {
+    margin-left: 1em;
+}
